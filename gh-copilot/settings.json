@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Bearded Theme HC Ebony",
+    "workbench.sideBar.location": "right",
+    "editor.fontFamily": "Hack Nerd Font",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "redhat.telemetry.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "scminput": false,
+        "markdown": true,
+        "python": false,
+        "java": false
+    },
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "github.copilot.chat.localeOverride": "pt-br",
+    "github.copilot.chat.scopeSelection": true,
+    "github.copilot.chat.terminalChatLocation": "terminal"
+}
