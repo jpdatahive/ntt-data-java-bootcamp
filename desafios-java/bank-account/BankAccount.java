@@ -6,7 +6,7 @@ public class BankAccount {
     private boolean usandoChequeEspecial;
 
     // Criamos o construtor e os métodos que Conta Bancária terão
-    public ContaBancaria(double depositoInicial) {
+    public BankAccount(double depositoInicial) {
         this.saldo = depositoInicial;
         this.usandoChequeEspecial = false;
 
