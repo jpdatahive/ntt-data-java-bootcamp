@@ -1,0 +1,16 @@
+# Compiled Java class files
+*.class
+
+# IDE files
+.idea/
+*.iml
+
+# Build directories
+target/
+build/
+
+# Gemini context file
+GEMINI.md
+
+# VSCode settings
+.vscode/
