@@ -5,9 +5,13 @@ public class Manager extends User {
     super(name, email, password, true);
   }
   
-  // Metodos especificos do gerente
-  public void makeFinanceReport() {
+  // Exclusive Methods
+  public void generateFinancialReport() {
+    System.out.println("Gerando relatorio financeiro...");
+  }
 
+  public void getGeneralSalesReport() {
+    System.out.println("Gerando relatorio de vendas...");
   }
 
 }

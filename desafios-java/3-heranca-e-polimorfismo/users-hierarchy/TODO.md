@@ -1,45 +1,45 @@
-# Hierarquia de Usuários (Simplificada)
+# User Hierarchy (Simplified)
 
 ---
 
-### 1. `User` (Classe Pai)
-- **Atributos:** `nome`, `email`, `senha`, `isAdministrador`
-- **Métodos Principais:**
-    - `realizarLogin()`
-    - `realizarLogoff()`
-    - `alterarDados()`
-    - `alterarSenha()`
-- **Getters/Setters:** Para todos os atributos.
+### 1. `User` (Parent Class)
+- **Attributes:** `name`, `email`, `password`, `isAdmin`
+- **Core Methods:**
+    - `login()`
+    - `logoff()`
+    - `changeInfo()`
+    - `changePassword()`
+- **Getters/Setters:** For all attributes.
 
 ---
 
-### 2. `Manager` (Herda de `User`)
-- **Configuração:** `isAdministrador` é sempre `true`.
-- **Métodos Exclusivos:**
-    - `gerarRelatorioFinanceiro()`
-    - `consultarVendas()` (geral)
+### 2. `Manager` (Inherits from `User`)
+- **Setup:** `isAdmin` is always `true`.
+- **Exclusive Methods:**
+    - `generateFinancialReport()`
+    - `getGeneralSalesReport()`
 
 ---
 
-### 3. `Seller` (Herda de `User`)
-- **Configuração:** `isAdministrador` é sempre `false`.
-- **Atributo Exclusivo:** `quantidadeVendas` (inicia em 0).
-- **Métodos Exclusivos:**
-    - `realizarVenda()`
-    - `consultarVendas()` (apenas as suas)
+### 3. `Seller` (Inherits from `User`)
+- **Setup:** `isAdmin` is always `false`.
+- **Exclusive Attribute:** `salesCount` (starts at 0).
+- **Exclusive Methods:**
+    - `makeSale()`
+    - `getMySalesReport()`
 
 ---
 
-### 4. `Attendant` (Herda de `User`)
-- **Configuração:** `isAdministrador` é sempre `false`.
-- **Atributo Exclusivo:** `valorEmCaixa` (inicia em 0.0).
-- **Métodos Exclusivos:**
-    - `receberPagamentos(valor)`
-    - `fecharCaixa()`
+### 4. `Attendant` (Inherits from `User`)
+- **Setup:** `isAdmin` is always `false`.
+- **Exclusive Attribute:** `cashBalance` (starts at 0.0).
+- **Exclusive Methods:**
+    - `receivePayment(amount)`
+    - `closeCashier()`
 
 ---
 
-### Plano de Testes
-- [ ] Criar um objeto de cada tipo (`Manager`, `Seller`, `Attendant`).
-- [ ] Testar todos os seus métodos.
-- [ ] Colocar todos em um array `User[]` e testar um método comum (como `realizarLogin`) para checar o polimorfismo.
+### Test Plan
+- [ ] Create one object of each type (`Manager`, `Seller`, `Attendant`).
+- [ ] Test all their methods.
+- [ ] Put all in a `User[]` array and test a common method (like `login`) to check polymorphism.

@@ -51,8 +51,8 @@ public class User {
   public void changeInfo(String name, String email) {
     String newName = name;
     String newEmail = email;
-    System.out.println("Nome alterado com sucesso, ANTIGO: %s - NOVO: %s.", this.name, newName);
-    System.out.println("Email alterado com sucesso, ANTIGO: %s - NOVO: %s.", this.email, newEmail);
+    System.out.printf("Nome alterado com sucesso, ANTIGO: %s - NOVO: %s.", this.name, newName);
+    System.out.printf("Email alterado com sucesso, ANTIGO: %s - NOVO: %s.", this.email, newEmail);
     this.name = newName;
     this.email = newEmail;
   } 
