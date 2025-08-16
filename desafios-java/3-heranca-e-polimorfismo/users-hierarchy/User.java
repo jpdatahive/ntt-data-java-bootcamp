@@ -1,9 +1,9 @@
 public class User {
   // Atributos da classe
-  protected String name;
-  protected String email;
-  protected String password;
-  protected boolean isAdmin;
+  private String name;
+  private String email;
+  private String password;
+  private boolean isAdmin;
 
   //Construtor
   public User(String name, String email, String password, boolean isAdmin) {
@@ -49,18 +49,16 @@ public class User {
   }
 
   public void changeInfo(String name, String email) {
-    String newName = name;
-    String newEmail = email;
-    System.out.printf("Nome alterado com sucesso, ANTIGO: %s - NOVO: %s.", this.name, newName);
-    System.out.printf("Email alterado com sucesso, ANTIGO: %s - NOVO: %s.", this.email, newEmail);
-    this.name = newName;
-    this.email = newEmail;
+    System.out.printf("Nome alterado de '%s' para '%s'.\n", this.name, name);
+    this.setName(name);
+
+    System.out.printf("Email alterado de '%s' para '%s'.\n", this.email, email);
+    this.setEmail(email);
   } 
 
   public void changePassword(String password) {
-    String newPassword = password;
+    this.setPassword(password);
     System.out.println("Senha alterada com sucesso.");
-    this.password = newPassword;
   }
 
 

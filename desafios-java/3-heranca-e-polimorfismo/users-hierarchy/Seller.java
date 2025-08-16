@@ -14,6 +14,6 @@ public class Seller extends User {
   } 
 
   public void getMySalesReport() {
-    System.out.printf("Gerando relatorio de vendas! Quantidade de vendas: %i", this.salesCount);
+    System.out.printf("Gerando relatorio de vendas! Quantidade de vendas: %d", this.salesCount);
   }
 }

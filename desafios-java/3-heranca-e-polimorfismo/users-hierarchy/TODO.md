@@ -40,6 +40,6 @@
 ---
 
 ### Test Plan
-- [ ] Create one object of each type (`Manager`, `Seller`, `Attendant`).
-- [ ] Test all their methods.
-- [ ] Put all in a `User[]` array and test a common method (like `login`) to check polymorphism.
+- [x] Create one object of each type (`Manager`, `Seller`, `Attendant`).
+- [x] Test all their methods.
+- [x] Put all in a `User[]` array and test a common method (like `login`) to check polymorphism.

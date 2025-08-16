@@ -15,6 +15,6 @@ public class Attendant extends User {
   } 
 
   public void closeCashier() {
-    System.out.printf("Caixa fechado! Valor total em caixa: % .2f", this.cashBalance);
+    System.out.printf("Caixa fechado! Valor total em caixa: %.2f\n", this.cashBalance);
   }
 }
